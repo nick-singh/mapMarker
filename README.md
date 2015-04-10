@@ -1,0 +1,1 @@
+This template uses Google Maps version 3 and Bootstrap 2x

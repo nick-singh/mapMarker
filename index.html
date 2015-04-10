@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessing arguments in UI events</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+    <link href="css/default.css" rel="stylesheet">
+    
+    <script src="js/vendor/jquery-1.10.0.js"></script>
+	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  	
+    <script src="js/app/maps.js"></script>
+  </head>
+  <body>
+	
+	<!--<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>-->
+	
+    <div id="panel">          	    
+	<!-- <input type = "text" id = "loc" value=""/> -->	
+      	<input class = "btn" id = "postfirsttrack" type=button value="First Track">
+      	<input class = "btn" id = "postalltracks" type=button value="All Track">
+        <button id = "bundle" class = "btn">Track Without Data</button>
+    </div>
+    
+    <div  id="map-canvas" style="margin-left: +120px" class="map_container">    	
+    </div>
+
+    <div class = "container">      
+      <div class = "row" id="error"></div>
+    </div>
+        
+    
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Location Name</h3>
+		</div>
+		<div class="modal-body">
+			<input type = "text" id = "loc" value=""/>
+		</div>
+		<div class="modal-footer">
+			<button id = "enter" class="btn" data-dismiss="modal" >Enter</button>			
+		</div>
+	</div>
+	<a href="modal_map.html">Launch demo modal</a>    
+
+  </body>
+</html>
+
